@@ -12,6 +12,7 @@
 		1057D7D32905469F00120B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057D7D22905469F00120B8B /* ViewController.swift */; };
 		1057D7D8290546A000120B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1057D7D7290546A000120B8B /* Assets.xcassets */; };
 		1057D7DB290546A000120B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1057D7D9290546A000120B8B /* LaunchScreen.storyboard */; };
+		930629332914B398007AFBFB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 930629322914B398007AFBFB /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1057D7D7290546A000120B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1057D7DA290546A000120B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1057D7DC290546A000120B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930629302914B389007AFBFB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		930629312914B397007AFBFB /* HH1037-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HH1037-Bridging-Header.h"; sourceTree = "<group>"; };
+		930629322914B398007AFBFB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,13 @@
 			children = (
 				1057D7CE2905469F00120B8B /* AppDelegate.swift */,
 				1057D7D02905469F00120B8B /* SceneDelegate.swift */,
+				930629302914B389007AFBFB /* Reachability.h */,
+				930629322914B398007AFBFB /* Reachability.m */,
 				1057D7D22905469F00120B8B /* ViewController.swift */,
 				1057D7D7290546A000120B8B /* Assets.xcassets */,
 				1057D7D9290546A000120B8B /* LaunchScreen.storyboard */,
 				1057D7DC290546A000120B8B /* Info.plist */,
+				930629312914B397007AFBFB /* HH1037-Bridging-Header.h */,
 			);
 			path = HH1037;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					1057D7CA2905469F00120B8B = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -136,6 +144,7 @@
 			files = (
 				1057D7D32905469F00120B8B /* ViewController.swift in Sources */,
 				1057D7CF2905469F00120B8B /* AppDelegate.swift in Sources */,
+				930629332914B398007AFBFB /* Reachability.m in Sources */,
 				1057D7D12905469F00120B8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,24 +282,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T7NAA5AVVJ;
+				DEVELOPMENT_TEAM = 2H75278LLG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HH1037/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "1037树洞";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.xhzq.HH1037;
+				MARKETING_VERSION = 1.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = Godlowd.Modal.HustHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH1037/HH1037-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,24 +316,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T7NAA5AVVJ;
+				DEVELOPMENT_TEAM = 2H75278LLG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HH1037/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "1037树洞";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.xhzq.HH1037;
+				MARKETING_VERSION = 1.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = Godlowd.Modal.HustHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH1037/HH1037-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
